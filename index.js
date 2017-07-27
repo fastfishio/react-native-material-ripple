@@ -71,6 +71,7 @@ export default class Ripple extends PureComponent {
   }
 
   onPress(event) {
+    event.persist();
     let { ripples } = this.state;
     let { onPress, rippleSequential } = this.props;
 
